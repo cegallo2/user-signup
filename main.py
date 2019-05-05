@@ -15,7 +15,7 @@ def index():
     return template.render()
 
 @app.route("/", methods=['POST'])
-def encrypt():
+def info():
     template = jinja_env.get_template('index.html')
     template2 = jinja_env.get_template('welcome.html')
 
